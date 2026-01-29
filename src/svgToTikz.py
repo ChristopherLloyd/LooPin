@@ -37,9 +37,17 @@ fontsize = None
 # torus0: 30
 # torus_half: 30
 
+
 #simplepin figs
 # graph_reduction.svg: 12
-
+# 12_56^3: 20
+# main_reduction_example: 18
+# edge_gadget_bundle.svg: 18
+# triloopbigon.svg: 18
+# tooth.svg: 30
+# all plumbing figures: 16
+# edge_gadgets: 36
+# triloopsinkandsource, trilooptographexample: 18
 
 #print( filename, type( filename ) )
 
@@ -74,9 +82,9 @@ toWrite = re.sub( "\$\\\\backslash\$", "\\\\", toWrite ) #fix this annoying thin
 #print( toWrite )
 
 # all text must be on its own layer or this won't work. or maybe it will anyway idk
+# also don't group the text
 
-
-fontsize = 12
+fontsize = 18
 if fontsize is not None:
     insert = "\\tikzstyle{{every node}}=[font=\\fontsize{{{}}}{{{}}}\\selectfont]".format( fontsize, fontsize )
 else:
